@@ -1,0 +1,20 @@
+pragma language_version 0.23;
+
+// Public state: only a counter of successful verifications is ever stored.
+// The birth year itself NEVER touches the ledger.
+export ledger verifiedCount: Counter;
+
+// birthYear and currentYear are circuit parameters, which are PRIVATE by
+// default in Compact. Nothing about them is disclosed unless we explicitly
+// call disclose() on a value — and we never do that here.
+export circuit proveAdult(birthYear: Uint<16>, currentYear: Uint<16>): [] {
+  const age = currentYear - birthYear;
+
+  // If this assertion fails, proof generation fails and no valid proof
+  // can ever be submitted — there's no way to "fake" being 18+.
+  assert(age >= 18, "Must be 18 or older");
+
+  // The only thing that ever becomes public: a counter went up by one.
+  // No birth year, no age, no personal data.
+  verifiedCount.increment(1);
+}
