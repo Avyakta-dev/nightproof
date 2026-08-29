@@ -1,0 +1,58 @@
+{
+  "manifest-version": "1",
+  "compiler-version": "0.34.0",
+  "language-version": "0.26.0",
+  "runtime-version": "0.19.0",
+  "compiler": {
+    "type": "directory",
+    "contract-info.json": {
+      "type": "file",
+      "size": 787,
+      "hash": "5f47b44cbf68c1084dff5c2e4b9aaec0538a0e398f5e192ee08640c4cd70d0c8"
+    }
+  },
+  "contract": {
+    "type": "directory",
+    "index.d.ts": {
+      "type": "file",
+      "size": 1542,
+      "hash": "9d57168cbd6eb94b04148ec4b15e61d465716cd383752528b2a2107b850dc0a6"
+    },
+    "index.js": {
+      "type": "file",
+      "size": 11799,
+      "hash": "f46ebda8d42b2c768087e91fe346d9a621c5cbeec5e99f8c8fd2adc6214293ff"
+    },
+    "index.js.map": {
+      "type": "file",
+      "size": 631,
+      "hash": "51fcded3ba792590b53630c98e1aabe003fc48d0056be32a3afb0a506766179c"
+    }
+  },
+  "zkir": {
+    "type": "directory",
+    "proveAdult.bzkir": {
+      "type": "file",
+      "size": 97,
+      "hash": "7a3d851edca9628ba448b6dc09b6ed2c0b0b1408170747135fe25812aa290fb7"
+    },
+    "proveAdult.zkir": {
+      "type": "file",
+      "size": 1291,
+      "hash": "7f93892544048a39a9c5881d5233e6fcedb7b62dd775bb2d3b8184d2ed1a0eec"
+    }
+  },
+  "keys": {
+    "type": "directory",
+    "proveAdult.prover": {
+      "type": "file",
+      "size": 147026,
+      "hash": "b3b23f91c8f1c12142471be693f6c8717f0b34ad25583fd7439ccf359c461352"
+    },
+    "proveAdult.verifier": {
+      "type": "file",
+      "size": 1351,
+      "hash": "b3547acabc0b2d52eb758e3b977a02a1cda2eefec4f71d82e6da96115686366f"
+    }
+  }
+}

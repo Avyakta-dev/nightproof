@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../",
+  "sources": ["age-proof.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;MAWA,AAAA,UAUC;;;;;cAVyB,WAAmB;cAAE,aAAqB;;;;;;;;;;;;;;;;;;;;;;;;;yCAA1C,WAAmB,+BAAE,aAAqB;;;;;;;;;kDAA1C,WAAmB;kDAAE,aAAqB;;;;OAUnE;;;;GACA;EAtBD;;;;;;;;;;;;;;;;;;;;;;;;;;IAMA;;;;;;;;;yEAAqC;;;;;;;GAgBpC;EAXD,AAAA,mBAUC,4BAVyB,WAAmB,EAAE,aAAqB;UAC5D,KAA6B,4BAAvB,aAAW,IAAG,WAAS;;mBAAvB,aAAW,GAAG,WAAS;4BAI5B,KAAG;UAIV,KAAa;IAAb;;;;;;;;;;6FAAA,KAAa;;;;wEAAA;;GACd;;;;;;;;;;;;;;;;IAfD;qCAAA;;;;;;;;;;;0GAAqC;KAAA;;;;;;;;;;;;;;"
+}
