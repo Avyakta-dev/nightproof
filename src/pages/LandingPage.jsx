@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ToggleLeft, ToggleRight } from "lucide-react";
 
 export default function LandingPage({ onSignUp }) {
   const [privacyOn, setPrivacyOn] = useState(true);
@@ -17,26 +18,22 @@ export default function LandingPage({ onSignUp }) {
         that needs to verify you're 18+ without collecting your birthdate.
       </p>
 
-      <div className="mx-auto mt-8 flex w-fit items-center gap-3 rounded-full border border-white/10 bg-[#111111] px-4 py-2.5">
+      <button
+        onClick={() => setPrivacyOn(!privacyOn)}
+        className="mx-auto mt-8 flex w-fit items-center gap-3 rounded-full border border-white/10 bg-[#111111] px-5 py-2.5 transition hover:bg-[#161616]"
+      >
         <span className={`text-sm font-medium ${privacyOn ? "text-white/40" : "text-white"}`}>
           Standard
         </span>
-        <button
-          onClick={() => setPrivacyOn(!privacyOn)}
-          className={`relative h-6 w-11 rounded-full transition ${
-            privacyOn ? "bg-[#D5FF40]" : "bg-white/15"
-          }`}
-        >
-          <span
-            className={`absolute top-0.5 h-5 w-5 rounded-full bg-black transition-transform ${
-              privacyOn ? "translate-x-5" : "translate-x-0.5"
-            }`}
-          />
-        </button>
+        {privacyOn ? (
+          <ToggleRight className="h-6 w-6 text-[#D5FF40]" strokeWidth={2} />
+        ) : (
+          <ToggleLeft className="h-6 w-6 text-white/40" strokeWidth={2} />
+        )}
         <span className={`text-sm font-medium ${privacyOn ? "text-[#D5FF40]" : "text-white/40"}`}>
           🔒 Privacy Mode
         </span>
-      </div>
+      </button>
 
       <button
         onClick={() => onSignUp(privacyOn)}

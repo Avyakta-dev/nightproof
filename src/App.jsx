@@ -4,7 +4,6 @@ import LandingPage from "./pages/LandingPage";
 import SignupStandard from "./pages/SignupStandard";
 import SignupPrivate from "./pages/SignupPrivate";
 
-
 export default function App() {
   const [page, setPage] = useState("landing"); // "landing" | "signup"
   const [privacyOn, setPrivacyOn] = useState(true);
