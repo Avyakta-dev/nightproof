@@ -25,8 +25,7 @@ export default function WalletConnect() {
           <p className="mt-2 text-sm text-white/60">
             Live connection in this demo is intermittent due to Preprod
             network instability — the same instability that also
-            blocked live contract deployment (see README for details and a
-            link to Midnight's own forum post confirming the issue).
+            blocked live contract deployment.
           </p>
           <button
             onClick={() => setOpen(false)}
