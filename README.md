@@ -2,8 +2,6 @@
 
 **Prove you're 18+ without revealing your birth date — built with Midnight's zero-knowledge proofs.**
 
-Built solo for the Midnight Hackathon — Integrate Midnight / Best Beginner Hack tracks.
-
 ----------
 
 ## The problem
